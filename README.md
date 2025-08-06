@@ -48,7 +48,8 @@ This project predicts **arousal** (a measure of emotional intensity) from audio-
 
 ---
 
-## 📁 Project Structure
+## Project Structure
+、、、
 emotion-arousal-prediction-from-audio-explainable-AI/
 ├── notebook/
 │ ├── emotion_dataset_eda.ipynb # EDA: correlation, heatmaps, scatter plots, feature selection
@@ -63,6 +64,7 @@ emotion-arousal-prediction-from-audio-explainable-AI/
 ├── data/ # datasets
 │ └── emotion_data.csv
 ├── README.md
+、、、
 
 
 ## Model R² Score Comparison
