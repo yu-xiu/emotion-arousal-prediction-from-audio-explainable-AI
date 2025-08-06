@@ -2,7 +2,11 @@
 
 This project predicts **arousal** (a measure of emotional intensity) from audio-derived features using machine learning models, and explains the predictions using SHAP (SHapley Additive exPlanations). The goal is to build arousal targeted AI model and explain the importance of the feature impacts.
 
-![What is Arousal](assets/arousal.png)
+<img src="assets/arousal_valence_model_reference.png" width="500"/>
+
+*Figure 1: Arousal‑Valence emotion model (source: Neurodivergent Insights¹)*
+
+
 ---
 
 ## Project Overview
@@ -65,19 +69,40 @@ emotion-arousal-prediction-from-audio-explainable-AI/
 The bar chart below compares the R² performance of four regression models trained on the selected audio features.  
 MLP Regressor demonstrated the best generalization performance.
 
-![Model R² Score Comparison Bar Chart](assets/holdout_CV_bar_plot.png.png)
+<img src="assets/holdout_CV_bar_plot.png" width="500" alt="Model R² Score Comparison Bar Chart"/>
+
+*Figure 2: Bar chart comparing model R² scores across holdout and cross-validation*
 
 
 ## Baseline vs Tuned Model Performance
 Despite tuning, both Random Forest and MLP did not outperform their default configurations.
 This highlights the importance of dataset size when applying complex models or hyperparameter search.
 
-![Model R² Score Comparison Bar Chart](assets/baseline_tuned_comparison.png)
+
 Based on these findings, the default MLP configuration was selected as the final model for SHAP interpretation and deployment.
+
+<img src="assets/baseline_tuned_comparison.png" width="500" alt="Model R² Score Comparison Bar Chart"/>
+
+*Figure 3: Tuning had minimal impact on R² performance in this dataset*
+
 
 
 ## SHAP Summary Plot
 This plot shows the top 10 features contributing to arousal level predictions made by the MLP Regressor.  
 The higher the SHAP value, the more impact the feature has on the prediction (positively or negatively).
 
-![SHAP beeswarm for Arousal Prediction](assets/shap_result.png)
+<img src="assets/shap_result.png" width="500" alt="SHAP beeswarm for Arousal Prediction"/>
+
+<p><i>Figure 4: SHAP beeswarm plot showing top feature contributions to arousal prediction</i></p>
+
+
+---
+
+## 📚 References
+
+- Abri, F. et al. *A Comparative Analysis of Modeling and Predicting Perceived and Induced Emotions in Sonification*. [MDPI link](https://www.mdpi.com/2079-9292/10/20/2519)
+
+- ¹ Neff, M.A. *Using the Arousal–Valence Model to Better Your Emotional Intelligence*. [neurodivergentinsights.com](https://neurodivergentinsights.com/arousal-valence-model/)
+
+
+
