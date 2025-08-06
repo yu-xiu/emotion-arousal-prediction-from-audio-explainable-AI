@@ -14,7 +14,7 @@ This project predicts **arousal** (a measure of emotional intensity) from audio-
 - **Task**: Regression — predict arousal levels from acoustic features
 - **Input**: 75+ features extracted from audio data (e.g., MFCCs, energy, pitch)
 - **Target**: Arousal (continuous emotion intensity score)
-- **Tech Stack**: Python, Scikit-learn, XGBoost, SHAP, Google Colab
+- **Tech Stack**: Python, Scikit-learn, XGBoost, Random Forest, MLP Regressor, SHAP, GridSearchCV, Google Colab
 
 ---
 
