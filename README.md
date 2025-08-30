@@ -1,12 +1,12 @@
 #### Created: 08/30/2023
 #### Modified: 07/31/2025
 # Emotion Arousal Prediction from Audio with Explainable AI
-<img src="assets/XAI-Emotion-Logo.png" width="500"/>
+<img src="assets/XAI-Emotion-Logo.png" width="300"/>
 
 ## Introduction
 This project predicts **arousal** (a measure of emotional intensity) from audio-derived features using machine learning models, and explains the predictions using SHAP (SHapley Additive exPlanations). The goal is to build arousal targeted AI model and explain the importance of the feature impacts.
 
-<img src="assets/arousal.png" width="500"/>
+<img src="assets/arousal.png" width="300"/>
 
 *Figure 1: Arousal‑Valence emotion model (source: Neurodivergent Insights¹)*
 
